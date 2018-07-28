@@ -1,0 +1,19 @@
+.mydropown-search
+{
+    background-color:white !important;width:150px;color:navy !important;text-align: left !important;height: 40px;font-size: 1.5rem !important;
+}
+
+.appBackground {
+    position: relative;
+    background-image: url("http://www.hdnicewallpapers.com/Walls/Big/Chevrolet/New_Chevrolet_Corvette_Z06_Convertible_Blue_Car_HD_Wallpapers.jpg");
+    background-repeat:no-repeat;
+    background-size:100% 100vh;
+}
+
+#dark-overlay
+{
+    width:100%;
+    top:0;left:0;
+    background: rgba(0,0,0,.7);
+    min-height: 700px;
+}

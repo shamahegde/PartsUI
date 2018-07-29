@@ -15,5 +15,105 @@
     width:100%;
     top:0;left:0;
     background: rgba(0,0,0,.7);
-    min-height: 700px;
+    min-height: 800px;
 }
+
+
+
+.container {
+  margin: 0 auto;
+  padding: 2px;
+  width: 100%;
+  color: #333;
+  
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-slide {
+  text-align: center;
+  margin: 0px 20px;
+  color: #419be0;
+  background: white;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sellbutton {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 2px solid;
+  background-color: papayawhip;
+  border-radius: 10px;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+  font-family: "Arial";
+  margin-top: 5px;
+  color:indigo;
+  font-size: 32px;
+}
+
+.outer {
+display: table;
+position: absolute;
+height: 100%;
+width: 100%;
+}
+#footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;   /* Height of the footer */
+  background:darkblue;
+}
+.modal-content{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+.middle {
+display: table-cell;
+vertical-align: middle;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -100px;
+  padding-bottom: 100px;
+}
+.footer {
+  height: 70px;
+  background-color: #333
+}
+
+.footer-item
+{
+  padding-top: 2% ;text-align: left
+}
+
+.inner {
+margin-left: auto;
+margin-right: auto;
+width: 400px;
+/*whatever width you want*/
+}
+
+label {display:block;}
+textarea { display:block;}

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://bootswatch.com/4/pulse/bootstrap.min.css">
     <link rel="stylesheet" href="mystyles.css">
-
+    <link rel="stylesheet" href="/css/wizard.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
@@ -17,6 +18,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
@@ -27,14 +31,9 @@
 </head>
 
 <body class="appBackground">
-
-
-
-
-
-    <div id="dark-overlay wrapper">
+    <div class="dark-overlay wrapper">
         <div class="bs-component">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar transparent navbar-expand-lg  ">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">
                         <img src="Images/Parts-Market-2_h64px.png" alt="">
@@ -45,18 +44,18 @@
 
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#">Home
+                            <a class="nav-link" style=" font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#">Home
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#">About</a>
+                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#">Quote</a>
+                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#">Quote</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#">Contact Us</a>
+                            <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#">Contact Us</a>
 
                     </ul>
 
@@ -64,18 +63,18 @@
                     <div class="col-sm-4 col-md-4 pull-right">
 
                         <ul class="nav navbar-nav ml-auto">
-                                <li class="nav-item">
-                                        <a class="nav-link"  style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#" target="_blank">Join Us</a>
-                                    </li>
                             <li class="nav-item">
-                                <a class="nav-link"  style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#" target="_blank">Sell</a>
+                                <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#" target="_blank">Join Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px" href="#" target="_blank">Login</a>
+                                <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#" target="_blank">Sell</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="font-size: 1.6rem;padding-left: 30px;padding-top: 20px;color:white;font-weight:500" href="#" target="_blank">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a id="cart-popover" class="btn" data-placement="bottom" title="Shopping Cart">
-                                    <span  style="padding-left: 30px;padding-top: 8px;" class="glyphicon glyphicon-shopping-cart">CART</span>
+                                    <span style="padding-left: 30px;padding-top: 8px;" class="glyphicon glyphicon-shopping-cart">CART</span>
                                 </a>
                             </li>
                         </ul>
@@ -85,255 +84,276 @@
 
                 </div>
             </nav>
-            <section class="section" style="margin-top: 150px;height: 200px;" id="home-search-section">
-                <div class="container-fluid style" style="width: 50%;height: 100%">
+            <section class="section" style="margin-top: 3%;height: 200px;" id="home-info-section">
+                <div>
+                    <h1 class="AutoPeople">We're the Auto People</h1>
+                    <h4 class="AutoPeoplesubHeader">Your one stop solution for trading auto parts</h4>
 
+                </div>
+                <div>
+                    <div class="card" style="margin-top:20%;height:300px;width:600px;margin-left:28%;background-color:white">
+                        <div>
+                            <p class="h3" style=" background-color: #0083F5; color:white ;text-align: center;font-weight: 600;height: 50px;margin-top:0%;align-content:space-around;padding-top: 2%"> Purchase By</p>
+                                   <div class="wrapper-highlight col-md-12 ">
+                                    <div class="col-md-4">
+                                        <div class="item-highlight active margin" style="margin-left: 0;">
+                                          Make,Model,Year
+                                          
+                                        </div>
+                                    </div>
+                                      <div>
+                                          <div class="col-md-4">
+                                        <div class="item-highlight ">
+                                          Part Number
+                                          
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="item-highlight last ">
+                                          VIN
+                                          
+                                        </div>
+                                    </div>
+                                      
+                                       
+                                      </div>
+                                          <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script>
+                                      
+                                        <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                                      
+                                        
+                                      
+                                          <script >
+                                            $('.item-highlight').click(function () {
+                                        $('.wrapper-highlight').addClass('active');
+                                        $('.item-highlight').removeClass('active').removeClass('margin');
+                                        $('.close').fadeOut(300);
+                                        $(this).addClass('active').addClass('margin');
+                                        $('.close', this).delay(700).fadeIn(300);
+                                      });
+                                      
+                                   
+                                          </script>
+                </div>
 
-
-
-
-                    <div class="well search-bar" style="background-color:rgba(171, 205, 239, 0.3);height: 100%">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="text-secondary">Buy Used Parts Instantly</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">
-                                <div class="dropdown">
-
-                                    <button class="btn btn-primary dropdown-toggle mydropown-search " type="button" data-toggle="dropdown">Year
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">2016</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">2017</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">2018</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="col-md-3">
-                                <div class="dropdown">
-
-                                    <button class="btn btn-primary dropdown-toggle mydropown-search" style="background-color:antiquewhite;color:navy;width:150px;text-align: left;height: 40px;font-size: 1.8rem"
-                                        type="button" data-toggle="dropdown">Make
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li>
-                                            <a href="#">A</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">B</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">C</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-
-                                <button class="btn btn-primary dropdown-toggle mydropown-search" style="background-color:antiquewhite;color:navy;width: 150px;text-align: left;height: 40px;font-size: 1.8rem"
-                                    type="button" data-toggle="dropdown">Model
+        
+                        <div class="btn-group col-md-12" style="margin-top: 0">
+                                <button type="button" class="btn btn-primary dropdown-toggle col-md-3" style="margin-left: 3%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Year
                                 </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">A</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">B</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">C</a>
-                                    </li>
-                                </ul>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                                <button type="button" class="btn btn-primary dropdown-toggle col-md-4" style="margin-left: 4%; height:15%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Make
+                                      </button>
+                                      <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                      </div>
+                                      <button type="button" class="btn btn-primary dropdown-toggle col-md-4" style="margin-left: 4%; height:15%" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Make
+                                          </button>
+                                          <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                          </div>
+                              </div>
+               
+            </section>
+
+
+
+
+
+          
+
+                    </div>
+
+
+                </div>
+        </div>
+        </section>
+            <section class="section" style="margin-top: 50%" id="home-logos-section">
+                <div class='container'>
+                    <div class='single-item'>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+                                </a>
                             </div>
-                            <div class="col-md-3">
-                                <button style="width:130px;color:midnightblue;height: 40px;background-color:mediumpurple;font-weight: 700;font-size: 1.8rem"
-                                    class="btn btn-primary">FIND PARTS</button>
 
+                        </div>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg">
+                                </a>
                             </div>
-
                         </div>
-
-                    </div>
-
-
-                </div>
-        </div>
-        </section>
-        <section class="section" style="margin-top: 5%" id="home-logos-section">
-            <div class='container'>
-                <div class='single-item'>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg">
+                                </a>
+                            </div>
                         </div>
-
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="slide">
-                            <a href="http://google.com/">
-                                <img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
-                            </a>
+                        <div>
+                            <div class="slide">
+                                <a href="http://google.com/">
+                                    <img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <script>
-                // tell the embed parent frame the height of the content
-                if (window.parent && window.parent.parent) {
-                    window.parent.parent.postMessage(["resultsFrame", {
-                        height: document.body.getBoundingClientRect().height,
-                        slug: "v8xbo5sz"
-                    }], "*")
-                }
-            </script>
-        </section>
-        <section class="section" style="margin-top: 45px;height: 100px;background-color:navy">
-            <div class="container-fluid>"
-            <div id="test" align="center">
-                <button id="myBtn"  data-toggle="modal" data-target="#myModal"style="padding:20px" class="sellbutton">Have Something to to Sell?</button>
-            </div>
-        </div>
-        </section>
+                <script>
+                    // tell the embed parent frame the height of the content
+                    if (window.parent && window.parent.parent) {
+                        window.parent.parent.postMessage(["resultsFrame", {
+                            height: document.body.getBoundingClientRect().height,
+                            slug: "v8xbo5sz"
+                        }], "*")
+                    }
+                </script>
+            </section>
+            <section class="section" style="margin-top: 5px;background-color:navy">
+                <div class="container-fluid">
+                    <div id="test" align="center">
+                        <button id="myBtn" data-toggle="modal" data-target="#myModal" style="padding:20px" class="sellbutton">Have Something to to Sell?</button>
+                    </div>
 
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog ">
+            </section>
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <form>
-                        <div class="form-group ">
-                            <label class="text-primary" for="inputName">Name</label>
-                            <input type="year" class="form-control" id="inputName" placeholder="name">
-                        </div>
-                        <div class="form-group ">
-                            <label class="text-primary" for="inputEmail">Email</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="xyz@mail.com">
-                        </div>
-                        <div class="form-group ">
-                            <label class="text-primary" for="inputDesc">Description</label>
-                            <textarea rows="4" cols="35 " name="inputDesc" id="inputDesc" placeholder="About the item"></textarea>
-                        </div>
-                        <div class="form-group ">
-                            <label class="text-primary" for="inputImage">Upload pic</label>
-                            <input type="file" name="pic" accept="image/*">
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog ">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <form>
+                            <div class="form-group ">
+                                <label class="text-primary" for="inputName">Name</label>
+                                <input type="year" class="form-control" id="inputName" placeholder="name">
+                            </div>
+                            <div class="form-group ">
+                                <label class="text-primary" for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="xyz@mail.com">
+                            </div>
+                            <div class="form-group ">
+                                <label class="text-primary" for="inputDesc">Description</label>
+                                <textarea rows="4" cols="35 " name="inputDesc" id="inputDesc" placeholder="About the item"></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <label class="text-primary" for="inputImage">Upload pic</label>
+                                <input type="file" name="pic" accept="image/*">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+
+
+                    </div>
 
                 </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById('myModal');
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks the button, open the modal 
+                    btn.onclick = function () {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                        $('.modal-backdrop').remove();
+                        $('body').removeClass('modal-open');
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+
             </div>
-        </div>
+            <section>
+                <div class="footer">
+                    <div class="col-md-2" style="padding-top: 2%;text-align: left;margin-left: 0%">
+                        <a href="#">
+                            <p style="color:antiquewhite;font-size: 1.5rem">EARN WITH US</p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 footer-item">
+                        <a href="#">
+                            <p style="color:antiquewhite;font-size: 1.5rem">OUR LOCATIONS</p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 footer-item">
+                        <a href="#">
+                            <p style="color:antiquewhite;font-size: 1.5rem">OFFICE ADDRESS</p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 footer-item">
+                        <a href="#">
+                            <p style="color:antiquewhite;font-size: 1.5rem">CONTACT US</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            </div>
 
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-    
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-            $('.modal-backdrop').remove(); 
-            $('body').removeClass('modal-open');
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
-    </div>
-    <div class="footer">
-        <div class="col-md-2" style="padding-top: 2%;text-align: left;margin-left: 0%">
-            <a href="#">
-            <p style="color:antiquewhite;font-size: 1.5rem">EARN WITH US</p>
-            </a>
-        </div>
-        <div class="col-md-2 footer-item" >
-                <a href="#">
-            <p style="color:antiquewhite;font-size: 1.5rem">OUR LOCATIONS</p>
-            </a>
-        </div>
-        <div class="col-md-2 footer-item" >
-                <a href="#">
-            <p style="color:antiquewhite;font-size: 1.5rem">OFFICE ADDRESS</p>
-            </a>
-        </div>
-        <div class="col-md-2 footer-item" >
-                <a href="#">
-            <p style="color:antiquewhite;font-size: 1.5rem">CONTACT US</p>
-            </a>
-        </div>
-     
 </body>
+
 
 </html>
